@@ -1,0 +1,190 @@
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, section, article, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Torfacts */
+.TorfactsDIV {
+	float: right;
+	padding: 2%;
+
+}
+
+.Torfacts {
+	border-radius: 25px;
+	background: #dca7fa;
+	padding: 20px;
+	width: 200px;
+	height: 400px;
+}
+
+
+/* Style rule for body */
+body {
+	background-color: rgb(179, 140, 201);
+}
+
+/* Style rules for mobile viewport */
+
+section {
+	background-color: #541783;
+	color: #fff;
+	margin-top: 4%;
+	padding: 3%;
+}
+
+article {
+	margin-top: 1%;
+	padding: 2%;
+}
+
+aside {
+	background-color:  rgba(187, 142, 235, 0.3);
+	padding: 2%;
+	margin-top: 1%;
+	color: #183440;
+	box-shadow: 4px, 4px, 10px, #27093a;
+}
+
+/* Style rule for header */
+header {
+	font-family: Verdana, Arial, sans-serif;
+	margin-top: 0.2em;
+	background-color: #8a58b3;
+	color: #fff;
+	padding: 2%;
+}
+
+/* Style rules for nav area */
+nav {
+	background-color: #481770;
+	padding: 0.5%;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	color: #fff;
+	padding: 1% 3%;
+	text-decoration: none;
+}
+
+/* HAMBURGER MENU */
+
+.topnav {
+	overflow: hidden;
+	background-color: #7e35bb;
+	position: relative;
+  }
+  
+  .topnav #myLinks {
+	display: none;
+  }
+  
+  .topnav a {
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+  }
+  
+  .topnav a.icon {
+	background: black;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  
+  .topnav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  .active {
+	background-color: #481770;
+	color: white;
+  }
+
+/* Style rules for main content  */
+main {
+	padding: 1em;
+	background-color: #fff;
+}
+
+footer {
+	font-size: 1em;
+	text-align: center;
+	color: #fff;
+}
+
+/* BUTTONS FOR MEDIA */
+.fa:hover {
+	opacity: 0.7;
+  }
+  
+  .fa {
+	padding: 10px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 30%;
+  }
+
+  .fa-youtube {
+	background: #591972;
+	color: white;
+  }
+  
+  .fa-twitter {
+	background: #591972;
+	color: white;
+  }
+
+  .fa-instagram {
+	background: #591972;
+	color: white;
+  }
+
+  .fa-pinterest {
+	background: #591972;
+	color: white;
+  }
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 650px), print {
+
+    grid {
+		display: grid;
+		grid-template-columns: 2;
+		grid-gap: 20px;
+	}
+    
+	aside {
+		grid-template-columns: 1/span 2;
+
+
+	}
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1024px), print {
+
+	grid {
+		grid-template-columns: 4;
+	}
+
+	aside {
+		grid-template-columns: 1/span 4;
+	}
+
+    
+}
